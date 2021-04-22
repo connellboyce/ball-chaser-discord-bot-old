@@ -37,6 +37,7 @@ async def on_message(message):
     summary = getSummary(contentList[1])
     await message.channel.send(summary)
 
+
 """
 Gets JSON response for the specified user
 
@@ -54,6 +55,7 @@ def getJson(username):
   jsonResponse = json.loads(response.text)
   return jsonResponse
 
+
 """
 Gets rank based on the username and game mode provided
 
@@ -66,6 +68,7 @@ def getRank(username, mode):
 
   translation = {'1': 'Ranked Duel 1v1', '2': 'Ranked Doubles 2v2', '3': 'Ranked Standard 3v3', 'hoops': 'Hoops', 'rumble': 'Rumble', 'dropshot': 'Dropshot', 'snowday': 'Snowday', 'tournament': 'Tournament Matches', 'unranked': 'Un-Ranked'}
   return jsonResponse[translation[mode.lower()]]
+
 
 """
 Gets all ranks for a given user
@@ -80,6 +83,7 @@ def getSummary(username):
     try: stuff[jsonResponse['data']['segments'][x]['metadata']['name']] = jsonResponse['data']['segments'][x]['stats']['tier']['metadata']['name']
     except: None
   return stuff
+
 
 # Starts the bot
 token = os.environ['BALL_CHASER_TOKEN']

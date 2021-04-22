@@ -24,6 +24,7 @@ Discord bot to return relevant information for Rocket League
 ```
 - This command will display a list of commands that Ball-Chaser provides.
 <br/>
+
 ```
 !goal
 ```

@@ -2,6 +2,7 @@ import os
 import discord
 import requests
 import json
+from keep_alive import keepAlive
 
 # Initialize the client
 client = discord.Client()
@@ -84,6 +85,9 @@ def getSummary(username):
     except: None
   return stuff
 
+
+# Starts the web server
+keepAlive()
 
 # Starts the bot
 token = os.environ['BALL_CHASER_TOKEN']

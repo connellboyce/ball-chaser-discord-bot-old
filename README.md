@@ -27,11 +27,14 @@ Discord bot to return relevant information for Rocket League
 ```
 !goal
 ```
+
 - This command will simply return "What a save!".
 <br/>
+
 ```
 !rank <username> <game mode>
 ```
+
 - This command will grab a player's rank for a specific game mode.
 
 
@@ -39,5 +42,5 @@ Discord bot to return relevant information for Rocket League
 
 
 ### **6** References
-[Tutorial](https://www.youtube.com/watch?v=SPTfmiYiuok)
-[API](https://tracker.gg/developers)
+- [Tutorial](https://www.youtube.com/watch?v=SPTfmiYiuok)
+- [API](https://tracker.gg/developers)

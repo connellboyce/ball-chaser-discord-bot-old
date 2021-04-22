@@ -22,12 +22,17 @@ Discord bot to return relevant information for Rocket League
 ```
 !help
 ```
+- This command will display a list of commands that Ball-Chaser provides.
+<br/>
 ```
 !goal
 ```
+- This command will simply return "What a save!".
+<br/>
 ```
 !rank <username> <game mode>
 ```
+- This command will grab a player's rank for a specific game mode.
 
 
 ### **5** Screenshots
